@@ -1,0 +1,50 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#5E5CE6",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Ajoute une **2e ligne sous l'heure** de la barre d'état, dans SpringBoard et dans toutes les apps.\n\n- Vitesse réseau ↓ ↑ (Wi-Fi + cellulaire)\n- RAM disponible\n- Température de la batterie\n- Pourcentage exact de la batterie\n\nRéglages : choix des infos, taille du texte, fréquence de rafraîchissement.",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 (rootless, Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    }
+   ]
+  },
+  {
+   "tabname": "Changelog",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Première version."
+    }
+   ]
+  }
+ ]
+}

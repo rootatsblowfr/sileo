@@ -1,0 +1,50 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#5E5CE6",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Garde l'**historique du presse-papier**.\n\nAppui long dans n'importe quel champ texte → **Historique** → le texte choisi est inséré au curseur.\n\n- Jusqu'à 100 éléments\n- Copies des gestionnaires de mots de passe ignorées\n- Bouton pour effacer l'historique",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 (rootless, Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    }
+   ]
+  },
+  {
+   "tabname": "Changelog",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Première version."
+    }
+   ]
+  }
+ ]
+}

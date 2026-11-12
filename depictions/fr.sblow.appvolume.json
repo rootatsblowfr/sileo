@@ -1,0 +1,50 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#5E5CE6",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Chaque app **retrouve son volume média** à l'ouverture.\n\n- Volume séparé par sortie audio (haut-parleur, chaque casque Bluetooth)\n- Ne touche pas à la musique qui joue en arrière-plan\n- Écran d'accueil inclus en option",
+     "useSpacing": true
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 (rootless, Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    }
+   ]
+  },
+  {
+   "tabname": "Changelog",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Première version."
+    }
+   ]
+  }
+ ]
+}

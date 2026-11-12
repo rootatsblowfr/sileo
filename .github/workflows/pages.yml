@@ -1,0 +1,54 @@
+name: Publish repo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build APT index
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq dpkg-dev apt-utils zstd
+          dpkg-scanpackages -m debs /dev/null > Packages
+          gzip -9kf Packages && bzip2 -9kf Packages && xz -9kf Packages && zstd -19 -qf Packages
+          apt-ftparchive \
+            -o APT::FTPArchive::Release::Origin="SBlow" \
+            -o APT::FTPArchive::Release::Label="SBlow" \
+            -o APT::FTPArchive::Release::Suite="stable" \
+            -o APT::FTPArchive::Release::Version="1.0" \
+            -o APT::FTPArchive::Release::Codename="ios" \
+            -o APT::FTPArchive::Release::Architectures="iphoneos-arm64" \
+            -o APT::FTPArchive::Release::Components="main" \
+            -o APT::FTPArchive::Release::Description="Tweaks rootless par SBlow" \
+            release . > Release
+          mkdir -p _site
+          cp -r debs depictions index.html CydiaIcon.png Packages* Release _site/
+          cat Packages
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
