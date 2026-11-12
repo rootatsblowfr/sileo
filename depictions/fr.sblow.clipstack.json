@@ -9,7 +9,7 @@
    "views": [
     {
      "class": "DepictionMarkdownView",
-     "markdown": "Garde l'**historique du presse-papier**.\n\nAppui long dans n'importe quel champ texte → **Historique** → le texte choisi est inséré au curseur.\n\n- Jusqu'à 100 éléments\n- Copies des gestionnaires de mots de passe ignorées\n- Bouton pour effacer l'historique",
+     "markdown": "Garde l'**historique du presse-papier**.\n\nTouche le bouton **📋 au-dessus du clavier** : le clavier est remplacé par la liste complète de ce que tu as copié. Touche un élément pour l'insérer au curseur, ou ⌨︎ pour revenir au clavier.\n\n- Jusqu'à 100 éléments\n- Copies des gestionnaires de mots de passe ignorées\n- Pas de bouton dans les apps qui ont déjà leur propre barre (Messages, WhatsApp…)",
      "useSpacing": true
     },
     {
@@ -18,7 +18,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Version",
-     "text": "1.0.0"
+     "text": "1.1.0"
     },
     {
      "class": "DepictionTableTextView",
@@ -36,6 +36,14 @@
    "tabname": "Changelog",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.1.0"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- Corrige le freeze et la chauffe : plus de vérification en boucle, lecture du presse-papier hors du thread principal de SpringBoard.\n- Nouveau bouton 📋 au-dessus du clavier qui affiche tout l'historique.\n- Le menu Copier/Coller n'est plus modifié."
+    },
     {
      "class": "DepictionSubheaderView",
      "title": "1.0.0"
