@@ -36,7 +36,7 @@ jobs:
             -o APT::FTPArchive::Release::Description="Tweaks rootless par SBlow" \
             release . > Release
           mkdir -p _site
-          cp -r debs depictions index.html CydiaIcon.png Packages* Release _site/
+          cp -r debs depictions icons index.html CydiaIcon.png Packages* Release _site/
           cat Packages
 
       - uses: actions/upload-pages-artifact@v3

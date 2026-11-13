@@ -1,19 +1,90 @@
 {
  "minVersion": "0.4",
  "class": "DepictionTabView",
- "tintColor": "#5E5CE6",
+ "tintColor": "#00A89E",
  "tabs": [
   {
    "tabname": "Détails",
    "class": "DepictionStackView",
    "views": [
     {
-     "class": "DepictionMarkdownView",
-     "markdown": "Chaque app **retrouve son volume média** à l'ouverture.\n\n- Volume séparé par sortie audio (haut-parleur, chaque casque Bluetooth)\n- Ne touche pas à la musique qui joue en arrière-plan\n- Écran d'accueil inclus en option",
-     "useSpacing": true
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.appvolume.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "AppVolume",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Chaque app retrouve son propre volume.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
     },
     {
      "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Volume par app",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Le volume de chaque app est mémorisé et restauré à l'ouverture.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Par sortie audio",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Un réglage pour le haut-parleur, un par casque Bluetooth.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Respecte ta musique",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Ne touche pas au volume si une autre app joue de la musique.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
     },
     {
      "class": "DepictionTableTextView",
@@ -23,26 +94,42 @@
     {
      "class": "DepictionTableTextView",
      "title": "Compatibilité",
-     "text": "iOS 16 – 18 (rootless, Dopamine)"
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Audio"
     },
     {
      "class": "DepictionTableTextView",
      "title": "Développeur",
      "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
     }
    ]
   },
   {
-   "tabname": "Changelog",
+   "tabname": "Nouveautés",
    "class": "DepictionStackView",
    "views": [
     {
      "class": "DepictionSubheaderView",
-     "title": "1.0.0"
+     "title": "1.0.0",
+     "useBoldText": true
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "Première version."
+     "markdown": "- Première version."
     }
    ]
   }

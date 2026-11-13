@@ -1,19 +1,112 @@
 {
  "minVersion": "0.4",
  "class": "DepictionTabView",
- "tintColor": "#5E5CE6",
+ "tintColor": "#0A84FF",
  "tabs": [
   {
    "tabname": "Détails",
    "class": "DepictionStackView",
    "views": [
     {
-     "class": "DepictionMarkdownView",
-     "markdown": "Ajoute une **2e ligne sous l'heure** de la barre d'état, dans SpringBoard et dans toutes les apps.\n\n- Vitesse réseau ↓ ↑ (Wi-Fi + cellulaire)\n- RAM disponible\n- Température de la batterie\n- Pourcentage exact de la batterie\n\nRéglages : choix des infos, taille du texte, fréquence de rafraîchissement.",
-     "useSpacing": true
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.statusinfo.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "StatusInfo",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Réseau, RAM, température et batterie sous l'heure.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
     },
     {
      "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Vitesse réseau",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Débit ↓ ↑ en direct, Wi-Fi et données mobiles.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "RAM disponible",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Mémoire libre, mise à jour en continu.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Température",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Température réelle de la batterie.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Batterie exacte",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Le pourcentage précis, sans arrondi.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Réglable",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Choix des infos, taille du texte, fréquence de rafraîchissement.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
     },
     {
      "class": "DepictionTableTextView",
@@ -23,34 +116,51 @@
     {
      "class": "DepictionTableTextView",
      "title": "Compatibilité",
-     "text": "iOS 16 – 18 (rootless, Dopamine)"
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Interface"
     },
     {
      "class": "DepictionTableTextView",
      "title": "Développeur",
      "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
     }
    ]
   },
   {
-   "tabname": "Changelog",
+   "tabname": "Nouveautés",
    "class": "DepictionStackView",
    "views": [
     {
      "class": "DepictionSubheaderView",
-     "title": "1.0.1"
+     "title": "1.0.1",
+     "useBoldText": true
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "- Les infos s'affichent maintenant dans un petit label sous l'heure (elles étaient coupées).\n- Détection de l'horloge indépendante du nom de classe d'iOS 18.\n- Logs de diagnostic : `oslog | grep StatusInfo`."
+     "markdown": "- Les infos s'affichent dans un petit label sous l'heure.\n- Détection de l'horloge indépendante du nom de classe d'iOS 18."
     },
     {
      "class": "DepictionSubheaderView",
-     "title": "1.0.0"
+     "title": "1.0.0",
+     "useBoldText": true
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "Première version."
+     "markdown": "- Première version."
     }
    ]
   }

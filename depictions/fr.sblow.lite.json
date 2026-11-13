@@ -1,0 +1,170 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#FF9F0A",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.lite.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Lite",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Un iPhone 3 Go plus fluide : RAM, animations, batterie.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Libérer la RAM",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Ferme les apps en arrière-plan, sauf l'app active, la musique et ta liste protégée.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Automatique",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Au verrouillage ou quand la RAM libre passe sous un seuil.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Animations",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Accélère ou ralentit les animations iOS (0,5× à 3×).",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Santé batterie",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Capacité réelle, cycles, température, tension, contrainte thermique.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Depuis HomeKey",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Libère la RAM d'un appui sur le bouton Home.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Bon à savoir"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Fermer une app libère de la RAM mais elle redémarre de zéro à la prochaine ouverture : ajoute à la liste protégée les apps dont tu veux garder l'état (Safari par défaut)."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Système"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
+    }
+   ]
+  },
+  {
+   "tabname": "Nouveautés",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- Première version."
+    }
+   ]
+  }
+ ]
+}

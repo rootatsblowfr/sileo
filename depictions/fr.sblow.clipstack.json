@@ -1,19 +1,112 @@
 {
  "minVersion": "0.4",
  "class": "DepictionTabView",
- "tintColor": "#5E5CE6",
+ "tintColor": "#FF375F",
  "tabs": [
   {
    "tabname": "Détails",
    "class": "DepictionStackView",
    "views": [
     {
-     "class": "DepictionMarkdownView",
-     "markdown": "Garde l'**historique du presse-papier**.\n\nTouche le bouton **📋 au-dessus du clavier** : le clavier est remplacé par la liste complète de ce que tu as copié. Touche un élément pour l'insérer au curseur, ou ⌨︎ pour revenir au clavier.\n\n- Jusqu'à 100 éléments\n- Copies des gestionnaires de mots de passe ignorées\n- Pas de bouton dans les apps qui ont déjà leur propre barre (Messages, WhatsApp…)",
-     "useSpacing": true
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.clipstack.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "ClipStack",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Tout ton presse-papier, à un bouton du clavier.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
     },
     {
      "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Bouton 📋 sur le clavier",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Remplace le clavier par la liste complète de ce que tu as copié.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Insertion directe",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Touche un élément : il est inséré au curseur, sans alerte de collage.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Mots de passe ignorés",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Les copies des gestionnaires de mots de passe ne sont pas gardées.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Léger",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Capture sur notification système, hors du thread principal.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Bon à savoir"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Pas de bouton dans les apps qui ont déjà leur propre barre au-dessus du clavier (Messages, WhatsApp…)."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
     },
     {
      "class": "DepictionTableTextView",
@@ -23,34 +116,51 @@
     {
      "class": "DepictionTableTextView",
      "title": "Compatibilité",
-     "text": "iOS 16 – 18 (rootless, Dopamine)"
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Productivité"
     },
     {
      "class": "DepictionTableTextView",
      "title": "Développeur",
      "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
     }
    ]
   },
   {
-   "tabname": "Changelog",
+   "tabname": "Nouveautés",
    "class": "DepictionStackView",
    "views": [
     {
      "class": "DepictionSubheaderView",
-     "title": "1.1.0"
+     "title": "1.1.0",
+     "useBoldText": true
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "- Corrige le freeze et la chauffe : plus de vérification en boucle, lecture du presse-papier hors du thread principal de SpringBoard.\n- Nouveau bouton 📋 au-dessus du clavier qui affiche tout l'historique.\n- Le menu Copier/Coller n'est plus modifié."
+     "markdown": "- Corrige le freeze et la chauffe.\n- Nouveau bouton 📋 au-dessus du clavier."
     },
     {
      "class": "DepictionSubheaderView",
-     "title": "1.0.0"
+     "title": "1.0.0",
+     "useBoldText": true
     },
     {
      "class": "DepictionMarkdownView",
-     "markdown": "Première version."
+     "markdown": "- Première version."
     }
    ]
   }
