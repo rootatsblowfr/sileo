@@ -1,0 +1,148 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#AF52DE",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.haptix.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Haptix",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Retour haptique sur les icônes et les boutons.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Icônes",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Un tic quand tu touches une icône de l'écran d'accueil ou du dock.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Boutons",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Retour haptique sur les boutons, interrupteurs et sélecteurs de toutes les apps.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "5 intensités",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Léger, moyen, fort, doux ou sec.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Bon à savoir"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Pour le clavier, iOS le fait déjà : Réglages > Sons et vibrations > Retour clavier > Vibration."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Interface"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
+    }
+   ]
+  },
+  {
+   "tabname": "Nouveautés",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- Première version."
+    }
+   ]
+  }
+ ]
+}

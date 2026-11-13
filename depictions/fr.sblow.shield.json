@@ -1,0 +1,170 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#B3261E",
+ "tabs": [
+  {
+   "tabname": "Détails",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 14
+    },
+    {
+     "class": "DepictionImageView",
+     "URL": "https://rootatsblowfr.github.io/sileo/icons/fr.sblow.shield.png",
+     "width": 96,
+     "height": 96,
+     "cornerRadius": 22,
+     "alignment": 1
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 6
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Shield",
+     "alignment": 1,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Bloque pubs, pisteurs et bannières cookies. Pare-feu par app.",
+     "alignment": 1,
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 10
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Fonctionnalités"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Pubs et pisteurs",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Plus de 60 régies et pisteurs bloqués dans Safari et toutes les pages web des apps.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Bannières cookies",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Les fenêtres de consentement courantes sont masquées et le défilement débloqué.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Dans les apps",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Option : les requêtes des apps vers ces domaines échouent aussi.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Pare-feu par app",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Coupe l'accès réseau des apps de ton choix.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "Ta liste",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Ajoute tes propres domaines à bloquer.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Bon à savoir"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Le pare-feu coupe les requêtes passant par les API réseau d'iOS (URLSession, pages web) : relance l'app pour l'appliquer. Les connexions bas niveau (sockets bruts) ne sont pas filtrées."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Informations"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Version",
+     "text": "1.0.0"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Compatibilité",
+     "text": "iOS 16 – 18 · rootless (Dopamine)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Catégorie",
+     "text": "Confidentialité"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Développeur",
+     "text": "SBlow"
+    },
+    {
+     "class": "DepictionTableButtonView",
+     "title": "Contacter le développeur",
+     "action": "mailto:owner@sblow.fr",
+     "openExternal": true
+    },
+    {
+     "class": "DepictionSpacerView",
+     "spacing": 16
+    }
+   ]
+  },
+  {
+   "tabname": "Nouveautés",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.0.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- Première version."
+    }
+   ]
+  }
+ ]
+}

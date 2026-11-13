@@ -1,13 +1,33 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AppVolume</title><style>*{box-sizing:border-box}body{margin:0;font:16px/1.45 -apple-system,system-ui,sans-serif;background:#f2f2f7;color:#1c1c1e}
-.hero{background:linear-gradient(135deg,#30D158,#00A89E);color:#fff;text-align:center;padding:34px 20px 30px}
-.hero img{width:104px;height:104px;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.hero h1{margin:14px 0 4px;font-size:28px}.hero p{margin:0;opacity:.9}
-main{max-width:640px;margin:0 auto;padding:16px}
-.card{background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0}
-.card h2{margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#8e8e93}
-.f{padding:9px 0;border-top:1px solid rgba(60,60,67,.12)}.f:first-of-type{border-top:0}
-.f b{display:block}.f span{color:#6c6c70;font-size:15px}
-.row{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid rgba(60,60,67,.12)}.row:first-of-type{border-top:0}
-.row span:last-child{color:#6c6c70;text-align:right}
-.v{font-weight:600;margin-top:8px}ul{margin:4px 0 0;padding-left:20px;color:#3a3a3c}
-@media(prefers-color-scheme:dark){body{background:#000;color:#f2f2f7}.card{background:#1c1c1e}ul{color:#d1d1d6}.f span,.row span:last-child{color:#98989f}}</style></head><body><div class="hero"><img src="../icons/fr.sblow.appvolume.png" alt=""><h1>AppVolume</h1><p>Chaque app retrouve son propre volume.</p></div><main><div class="card"><h2>Fonctionnalités</h2><div class="f"><b>Volume par app</b><span>Le volume de chaque app est mémorisé et restauré à l&#x27;ouverture.</span></div><div class="f"><b>Par sortie audio</b><span>Un réglage pour le haut-parleur, un par casque Bluetooth.</span></div><div class="f"><b>Respecte ta musique</b><span>Ne touche pas au volume si une autre app joue de la musique.</span></div></div><div class="card"><h2>Informations</h2><div class="row"><span>Version</span><span>1.0.0</span></div><div class="row"><span>Compatibilité</span><span>iOS 16 – 18 · rootless (Dopamine)</span></div><div class="row"><span>Catégorie</span><span>Audio</span></div><div class="row"><span>Développeur</span><span>SBlow</span></div></div><div class="card"><h2>Nouveautés</h2><div class="v">1.0.0</div><ul><li>Première version.</li></ul></div></main></body></html>
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><title>AppVolume</title><style>*{box-sizing:border-box}
+:root{--bg:#282828;--bg0:#1d2021;--bg1:#3c3836;--bg2:#504945;--fg:#ebdbb2;--fg4:#a89984;--gray:#928374;
+--yellow:#fabd2f;--orange:#fe8019;--green:#b8bb26;--aqua:#8ec07c;--blue:#83a598;--purple:#d3869b;--red:#fb4934}
+@media(prefers-color-scheme:light){:root{--bg:#fbf1c7;--bg0:#f9f5d7;--bg1:#ebdbb2;--bg2:#d5c4a1;--fg:#3c3836;--fg4:#7c6f64;
+--gray:#928374;--yellow:#b57614;--orange:#af3a03;--green:#79740e;--aqua:#427b58;--blue:#076678;--purple:#8f3f71;--red:#9d0006}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 "JetBrains Mono","Fira Code","SF Mono",ui-monospace,Menlo,Consolas,monospace;padding-bottom:40px}
+a{color:inherit}main{max-width:760px;margin:0 auto;padding:18px 14px}
+.prompt{color:var(--fg4);margin:6px 0 14px;white-space:pre-wrap;word-break:break-all}
+.u{color:var(--green)}.h{color:var(--aqua)}.d{color:var(--blue)}
+.cur{display:inline-block;width:.6em;height:1.1em;background:var(--fg);vertical-align:-.2em;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+fieldset{border:1px solid var(--bg2);margin:0 0 16px;padding:10px 14px 12px;background:var(--bg0)}
+fieldset.focus{border-color:var(--yellow)}
+legend{padding:0 6px;color:var(--yellow);font-weight:700}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{flex:1;min-width:200px;text-align:center;padding:10px;text-decoration:none;font-weight:700;border:1px solid var(--yellow)}
+.btn.s{background:var(--yellow);color:var(--bg0)}.btn.z{color:var(--aqua);border-color:var(--aqua)}
+.src{color:var(--fg4);margin-top:10px;word-break:break-all}.src b{color:var(--orange);font-weight:400}
+.t{display:flex;gap:12px;align-items:center;padding:9px 6px;text-decoration:none;border-left:2px solid transparent}
+.t:hover,.t:focus{background:var(--bg1);border-left-color:var(--yellow)}
+.t img{width:44px;height:44px;border-radius:10px;flex:none}
+.t .n{color:var(--fg);font-weight:700}.t .s{color:var(--blue);font-size:12px;margin-left:6px}
+.t .g{display:block;color:var(--fg4);font-size:13px}
+.idx{color:var(--gray);width:2ch;text-align:right;flex:none}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;font-size:13px;background:var(--bg1);color:var(--fg4)}
+.bar span{padding:3px 10px}.bar .m{background:var(--fg4);color:var(--bg0);font-weight:700}.bar .r{margin-left:auto;background:var(--bg2);color:var(--fg)}
+.hero{display:flex;gap:16px;align-items:center}.hero img{width:84px;height:84px;border-radius:18px;flex:none}
+.hero h1{margin:0;font-size:24px;color:var(--yellow)}.hero p{margin:4px 0 0;color:var(--fg4)}
+.f{padding:6px 0}.f b{color:var(--aqua)}.f b:before{content:"› ";color:var(--orange)}.f span{display:block;color:var(--fg);padding-left:2ch}
+.row{display:flex;justify-content:space-between;gap:12px;padding:3px 0;border-bottom:1px dashed var(--bg2)}.row:last-child{border:0}
+.row span:first-child{color:var(--fg4)}.row span:last-child{text-align:right}
+.v{color:var(--green);font-weight:700;margin-top:6px}ul{margin:2px 0 6px;padding-left:3ch;list-style:"- "}
+.note{color:var(--orange)}</style></head><body><main><div class="prompt"><span class="u">sblow</span>@<span class="h">repo</span>:<span class="d">~/tweaks</span>$ cat appvolume.md <span class="cur"></span></div><fieldset class="focus"><legend> AppVolume </legend><div class="hero"><img src="../icons/fr.sblow.appvolume.png" alt=""><div><h1>AppVolume</h1><p>Chaque app retrouve son propre volume.</p></div></div></fieldset><fieldset><legend> fonctionnalités </legend><div class="f"><b>Volume par app</b><span>Le volume de chaque app est mémorisé et restauré à l&#x27;ouverture.</span></div><div class="f"><b>Par sortie audio</b><span>Un réglage pour le haut-parleur, un par casque Bluetooth.</span></div><div class="f"><b>Respecte ta musique</b><span>Ne touche pas au volume si une autre app joue de la musique.</span></div><div class="f"><b>Volume plus fin</b><span>Boutons de volume à 32, 50 ou 100 crans au lieu de 16.</span></div></fieldset><fieldset><legend> bon à savoir </legend><div class="note">Égaliseur : iOS ne permet pas d&#x27;en ajouter un pour tout le système sans réécrire le mixeur audio. Le réglage EQ de l&#x27;app Musique reste disponible dans Réglages &gt; Musique.</div></fieldset><fieldset><legend> infos </legend><div class="row"><span>version</span><span>1.1.0</span></div><div class="row"><span>compat</span><span>iOS 16 – 18 · rootless (Dopamine)</span></div><div class="row"><span>section</span><span>Audio</span></div><div class="row"><span>paquet</span><span>fr.sblow.appvolume</span></div><div class="row"><span>dev</span><span>SBlow · owner@sblow.fr</span></div></fieldset><fieldset><legend> changelog </legend><div class="v">1.1.0</div><ul><li>Boutons de volume plus précis : 32, 50 ou 100 crans.</li></ul><div class="v">1.0.0</div><ul><li>Première version.</li></ul></fieldset><div class="prompt"><a href="../index.html">← cd ..</a></div></main><div class="bar"><span class="m">NORMAL</span><span>AppVolume</span><span class="r">1.1.0 · Audio</span></div></body></html>

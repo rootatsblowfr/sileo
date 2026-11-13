@@ -80,6 +80,28 @@
      "useSpacing": false
     },
     {
+     "class": "DepictionSubheaderView",
+     "title": "Volume plus fin",
+     "useBoldText": true,
+     "useBottomMargin": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Boutons de volume à 32, 50 ou 100 crans au lieu de 16.",
+     "useSpacing": false
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Bon à savoir"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Égaliseur : iOS ne permet pas d'en ajouter un pour tout le système sans réécrire le mixeur audio. Le réglage EQ de l'app Musique reste disponible dans Réglages > Musique."
+    },
+    {
      "class": "DepictionSeparatorView"
     },
     {
@@ -89,7 +111,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Version",
-     "text": "1.0.0"
+     "text": "1.1.0"
     },
     {
      "class": "DepictionTableTextView",
@@ -122,6 +144,15 @@
    "tabname": "Nouveautés",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionSubheaderView",
+     "title": "1.1.0",
+     "useBoldText": true
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "- Boutons de volume plus précis : 32, 50 ou 100 crans."
+    },
     {
      "class": "DepictionSubheaderView",
      "title": "1.0.0",
